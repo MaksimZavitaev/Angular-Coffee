@@ -6,5 +6,5 @@ gulp.task 'browserSync', ->
     port: 9000
     open: false
     server:
-      baseDir: ['./build', './src']
-    files: ['./build/**']
+      baseDir: ['./'] # TODO: Поправить путь до корня сервера
+    files: ['./**']

@@ -1,0 +1,32 @@
+<html lang="en" ng-csp="" xmlns:ng="http://angularjs.org" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>SAMP RP Web-System Client</title>
+</head>
+<body>
+<div ui-view></div>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="/destination/module.js"></script>
+<script src="/destination/users/module.js"></script>
+<script src="/destination/routes.js"></script>
+<script>
+    $.ajax({
+        url: 'http://api.fatfree.local/',
+        method: 'GET',
+        success: function (data, err) {
+            console.log('Success!');
+            console.log('Data: ', data);
+            console.log('Err: ', err);
+        },
+        error: function (data, err) {
+            console.log('Error!');
+            console.log('Data: ', data);
+            console.log('Err: ', err);
+        }
+    });
+</script>
+</body>
+</html>
