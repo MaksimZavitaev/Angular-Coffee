@@ -1,7 +1,3 @@
-class Users extends App('users')
+class Users extends App('app.users')
   constructor: ->
-    return ['ui.router']
-
-class UsersCtrl extends Controller('users')
-  constructor: ($scope) ->
-    $scope.name = 'Irene'
+    return []

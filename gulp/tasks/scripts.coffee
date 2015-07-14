@@ -6,6 +6,7 @@ ngClassify = require 'gulp-ng-classify'
 gulp.task 'scripts', ->
   options = {
     controller: {
+      format: 'upperCamelCase'
       suffix: ''
     }
   }

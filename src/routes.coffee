@@ -5,6 +5,8 @@ class Router extends Config('app')
     .state 'main',
       url: '/main',
       templateUrl: 'view/index.html'
+      controller: 'BaseController'
     .state 'main.list',
       url: '/list',
       templateUrl: 'view/list.html'
+      controller: 'UsersController'

@@ -2,5 +2,11 @@ class App extends App
   constructor: ->
     return [
       'ui.router'
-      'users'
+      'app.users'
     ]
+
+class BaseController extends Controller
+  constructor: ($scope) ->
+    $scope.name = 'This is Base Controller'
+    $scope.setName = ->
+      $scope.name = 'TEST Name'
